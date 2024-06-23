@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Umbrella Customizer</title>
+    <meta
+      name="description"
+      content="Umbrella Customizer tool will let the brand upload its logo and will create a preview by adding the logo to the bottom of the umbrella."
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="/styles/global.css" />
+    <link rel="icon" href="/assets/yellow_umbrella.png" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="column-50">
+        <img
+          id="umbrella-image"
+          src="assets/blue_umbrella.png"
+          alt="Umbrella"
+        />
+        <img
+          id="loading"
+          class="disabled loader"
+          src="assets/loader_icon.svg"
+          alt="Loader"
+        />
+        <img id="logo" class="disabled" src="" alt="Logo" />
+      </div>
+
+      <div class="column-50">
+        <h1>Custom Umbrella</h1>
+
+        <div class="color-options">
+          <button
+            class="color-swatch"
+            data-color="pink"
+            data-filter="invert(24%) sepia(85%) saturate(2635%) hue-rotate(324deg) brightness(90%) contrast(104%)"
+            data-filterClass="pink-spinner"
+            style="background-color: #e91e63;"
+          ></button>
+          <button
+            class="color-swatch"
+            data-color="blue"
+            data-filter="invert(44%) sepia(15%) saturate(6484%) hue-rotate(181deg) brightness(94%) contrast(105%)"
+            data-filterClass="pink-spinner"
+            style="background-color: #0390f4;"
+          ></button>
+          <button
+            class="color-swatch"
+            data-color="yellow"
+            data-filter="invert(91%) sepia(86%) saturate(6830%) hue-rotate(326deg) brightness(102%) contrast(99%)"
+            data-filterClass="pink-spinner"
+            style="background-color: #fdd835;"
+          ></button>
+        </div>
+
+        <div>
+          <div class="large-text">Customize your umbrella</div>
+          <div class="medium-text">Upload a logo for an instant preview.</div>
+          <div class="small-text">
+            .png and .jpg files only. Max file size is 5MB.
+          </div>
+        </div>
+
+        <button id="upload">
+          <span class=""><i class="icon"></i></span>
+          <span class="">
+            UPLOAD LOGO
+          </span>
+          <span class="close-btn"> </span>
+        </button>
+        <input
+          id="fileUploader"
+          type="file"
+          accept="image/png, image.jpg, image/jpeg"
+          hidden
+        />
+      </div>
+    </div>
+    <script src="/scripts/main.js" async defer></script>
+  </body>
+</html>
