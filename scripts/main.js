@@ -82,7 +82,7 @@
     logoField.classList.remove("disabled");
   }
 
-  // whenever a file is uploaded this function is called.
+  // Whenever a file is uploaded this function is called.
   fileUploader.onchange = function () {
     if (this.files && this.files[0]) {
       const reader = new FileReader();
@@ -104,5 +104,6 @@
   // Use to delay program execution asynchronously
   const delay = (ms) => new Promise((res) => setTimeout(res, ms));
 
+  // Run on window load
   init();
 }
